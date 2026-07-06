@@ -1,0 +1,29 @@
+# General ignores
+/.import/
+/.godot/
+/.vs/
+/.vscode/
+/.idea/
+/build/
+/bin/
+/obj/
+/.DS_Store
+*.log
+*.tmp
+
+# Godot export templates and caches
+.export/
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# User-specific
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Do not track generated baked textures or compiled assets in repo root (use LFS or external storage)
+/dist/
+
