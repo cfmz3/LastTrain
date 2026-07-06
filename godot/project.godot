@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=4 uid="UID-PROJECT-GODOT-4"]
+
+; minimal Godot 4 project file
+[application]
+config/name="LastTrain"
+config/description="Последний рейс — psychological horror / walking sim"
+run/main_scene="res://godot/Player.tscn"
+
+[rendering]
+quality/driver/disable_vsync=false
+
+; Project file saved as text to help reproduce project settings for Godot 4.3.
+; Note: InputMap (actions) should be added via the editor: move_forward, move_back, move_left, move_right, sprint, interact, ui_cancel.

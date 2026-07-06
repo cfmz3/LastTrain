@@ -1,0 +1,12 @@
+{
+  "textures": [
+    {
+      "name": "car_interior",
+      "prompt": "Generate high‑resolution texture set for train interior: albedo (diffuse) stained wallpaper, chipped paint, varnished wood, rust streaks; normal map with surface scratches and bumps; roughness map with variation; AO map baked from highpoly. Provide 2048x2048 PNG sources. For final mobile build prepare ASTC 4x4 and ETC2 variants."
+    },
+    {
+      "name": "erich_face",
+      "prompt": "Photorealistic male face albedo with age details (wrinkles, blemishes), subsurface scattering map if supported, 2048x2048 PNG. Provide matching normal, roughness, AO. Keep neutral expression for maptouches."
+    }
+  ]
+}

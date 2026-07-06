@@ -1,0 +1,19 @@
+{
+  "prompts": [
+    {
+      "asset": "models/interior/car_interior.glb",
+      "type": "environment",
+      "prompt": "High‑quality PBR model of a Soviet passenger coach interior (late 1980s). Realistic, detailed geometry for seats, walls, luggage racks, curtains and fixtures. Textures: albedo, normal, roughness, ambient occlusion. Material style: worn metal, wood varnish with scratches, dirty fabric, rust stains near seams. Lighting-neutral bake. Deliver as .glb with Y-up meters. Provide LODs: LOD0 15k tris, LOD1 6k, LOD2 2k. Include simple collision meshes named *_collider. Export all animation nodes empty (static scene)." 
+    },
+    {
+      "asset": "models/characters/erich.glb",
+      "type": "character",
+      "prompt": "Realistic male character (40s) in late-80s Eastern European clothing. PBR textures with skin pores, fabric detail, dirt and sweat. Sculpted high poly for baking; retopologized target 15k tris for mobile LOD0 (15k), 6k LOD1, 3k LOD2. Rigged with humanoid skeleton and simple animations: idle, talk_gesture, give_item, panic_run. Provide topologically clean UV islands, separate face maps (2048) and body maps (1024). Export as .glb with embedded animations and skinning."
+    },
+    {
+      "asset": "models/props/flask.glb",
+      "type": "prop",
+      "prompt": "Small metal flask with dents and scratches. PBR maps: albedo, normal, roughness. Target tris 1200, LOD1 400. Include UV margin for atlas packing. Export .glb."
+    }
+  ]
+}

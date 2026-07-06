@@ -1,0 +1,50 @@
+title: Cabin
+---
+<<set $help_erich = false>>
+<<set $turn_in_erich = false>>
+<<set $killed_erich = false>>
+
+-> Start
+
+=== Start
+The cab is cold; the radio hisses with distant announcements.
+
+Greta: "There's talk of a bomb on the train. Dispatcher orders no stop. What will you do?"
+
++ Inspect the wagon
+  -> Wagon_Investigate
++ Obey dispatcher and stay
+  -> StayInCabin
+
+=== Wagon_Investigate
+You step out into the corridor. The light in the vestibule is flickering.
+
+-> Erich_Encounter
+
+=== Erich_Encounter
+Erich: "We are not terrorists. We only want to cross the border. Help us and you will not be betrayed."
+
++ Help Erich
+  <<set $help_erich = true>>
+  -> End_Encounter
++ Turn Erich to the authorities
+  <<set $turn_in_erich = true>>
+  -> End_Encounter
++ Kill Erich
+  <<set $killed_erich = true>>
+  -> End_Encounter
+
+=== End_Encounter
+<<if $killed_erich>>
+*You stand with blood on your hands.*
+<<endif>>
+
+<<if $help_erich>>
+*You decide to help. Quietly, you pass a note to Greta.*
+<<endif>>
+
+<<if $turn_in_erich>>
+*A uniform approaches with suspicion in his eyes.*
+<<endif>>
+
+-> End
