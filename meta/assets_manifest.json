@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "path": "models/interior/car_interior.glb",
+      "type": "scene",
+      "role": "environment",
+      "poly_budget_mobile": 15000,
+      "textures": ["car_interior_albedo.png","car_interior_normal.png","car_interior_rough.png","car_interior_ao.png"],
+      "lods": ["models/interior/car_interior_LOD1.glb","models/interior/car_interior_LOD2.glb"]
+    },
+    {
+      "path": "models/characters/erich.glb",
+      "type": "character",
+      "role": "npc",
+      "poly_budget_mobile": 15000,
+      "textures": ["erich_albedo.png","erich_normal.png","erich_rough.png","erich_ao.png"],
+      "animations": ["idle","talk_gesture","give_item","panic_run"],
+      "lods": ["models/characters/erich_LOD1.glb","models/characters/erich_LOD2.glb"]
+    },
+    {
+      "path": "models/props/flask.glb",
+      "type": "prop",
+      "role": "collectible",
+      "poly_budget_mobile": 1200,
+      "textures": ["flask_albedo.png","flask_normal.png","flask_rough.png"],
+      "lods": ["models/props/flask_LOD1.glb"]
+    }
+  ]
+}
