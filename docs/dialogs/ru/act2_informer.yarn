@@ -1,0 +1,23 @@
+title: Act2_Informer_Start
+---
+NARR: "Вы стали на сторону Шварца. Вам дают небольшие привилегии и задания — вычислять и сдавать людей."
+
+SW: "Твоя следующая задача — проследить за парой Лена и Йозеф. Если он — дезертир, докажи." 
++ "Я постараюсь." -> Informer_Task
++ "Не знаю, смогу ли..." -> Informer_Doubt
+
+=== Informer_Task
+<<set $act2_path = 'informer'>>
+NARR: "Вы наблюдаете за парой и виде: Йозеф прячет документы."
++ "Сдать его Шварцу." -> Informer_TurnIn_Josef
++ "Помочь ему уйти." -> Informer_Help_Josef
+
+=== Informer_TurnIn_Josef
+<<set $surrender_josef = true>>
+NARR: "Шварц похвалил вас. Вы получили доступ к складским помещениям и больше строгих обязанностей."
+-> Act2_Informer_Missions
+
+=== Informer_Help_Josef
+<<set $help_josef = true>>
+NARR: "Вы потихоньку помогли Йозефу. Теперь ваши пути переплетены с подпольем и ГСБ."
+-> Act2_Helper_Missions

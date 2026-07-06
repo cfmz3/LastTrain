@@ -1,0 +1,36 @@
+name: Texture Conversion (ASTC/ETC2)
+on:
+  push:
+    paths:
+      - 'assets/textures/**'
+      - 'meta/**'
+
+jobs:
+  convert_textures:
+    name: Convert textures to mobile formats
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup dependencies
+        run: |
+          sudo apt-get update
+          # Install prerequisites (imagemagick, wget)
+          sudo apt-get install -y imagemagick wget
+          # NOTE: you must supply astcenc or use a container image with it
+
+      - name: Convert PNG to ASTC (placeholder)
+        run: |
+          echo "Converting textures... (template - replace with actual astcenc commands)"
+          mkdir -p converted_textures || true
+          ls assets/textures || true
+
+      - name: Upload converted textures as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: converted-textures
+          path: converted_textures/
+
+    # This workflow is a template. To make it production-ready, add concrete installers for astcenc
+    # and etcpack, or run conversion inside a container that has the tools preinstalled.

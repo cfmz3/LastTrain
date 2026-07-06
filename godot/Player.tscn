@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="UID-PLAYER-TSCN-001"]
+[ext_resource path="res://godot/player.gd" type="Script" id=1]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource( 1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0 )
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = CapsuleShape3D {
+    radius = 0.3
+    height = 1.2
+}
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+current = true
+
+[node name="Camera3D/RayCast3D" type="RayCast3D" parent="Camera3D"]
+cast_to = Vector3( 0, 0, -2.5 )
+debug_enabled = false
+
+[node name="AudioListener3D" type="AudioListener3D" parent="Camera3D"]
+

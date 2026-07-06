@@ -1,0 +1,36 @@
+[
+  {
+    "id": "interior_train_car",
+    "type": "model",
+    "name": "Train Car Interior - High Detail",
+    "prompt": "Photorealistic, high-detail interior of an Eastern European long-distance passenger train (late 1980s). Detailed wood, scratched metal, peeling patterned wallpaper, oil stains and grime in crevices. Provide high-poly sculpt for baking, retopologized game mesh for mobile (LOD0 ~ 12-20k tris, LOD1 ~ 5-8k, LOD2 ~ 2-3k). PBR textures: albedo/normal/roughness/metal/AO as PNG. Export glTF 2.0 (.glb), Y-up, meters. Include separate collision mesh named 'interior_car_collider'.",
+    "texture_target": "1024/2048",
+    "poly_budget_mobile": "12000-20000",
+    "lods": ["12000","6000","2500"]
+  },
+  {
+    "id": "character_erich",
+    "type": "character",
+    "name": "Erich - Leader",
+    "prompt": "Realistic male character, ~40, charismatic but hardened. 1980s clothing, dirt and wear. Provide high-poly sculpt and retopology. Mobile LODs: LOD0 12-15k, LOD1 6-8k, LOD2 2-3k. PBR textures 2048 (face/cloth), skin maps, eye textures. Provide animations: idle_breathing, talk_gesture, give_item, panic_run. Skinning and animations exported in .glb.",
+    "texture_target": "2048",
+    "poly_budget_mobile": "12000-15000",
+    "lods": ["15000","7000","3000"]
+  },
+  {
+    "id": "prop_flask",
+    "type": "prop",
+    "name": "Flask (metal)",
+    "prompt": "Detailed metal flask, dented and stained, realistic material detail. Single mesh, mobile tris <= 1500, PBR textures 1024. Export .glb with pivot at cap.",
+    "texture_target": "1024",
+    "poly_budget_mobile": "<=1500",
+    "lods": ["1500","600"]
+  },
+  {
+    "id": "sound_rails_loop",
+    "type": "sound",
+    "name": "Rails - wheel knock loop",
+    "prompt": "Loopable ambient recording - rhythmic wheel knock on rails with subtle body resonance, suitable for mobile and low bitrate. Provide .ogg 44.1kHz loopable file and .wav master.",
+    "format": "ogg/wav"
+  }
+]

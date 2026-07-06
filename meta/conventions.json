@@ -1,0 +1,16 @@
+{
+  "naming": {
+    "models": "models/<category>/<name>[_LOD#].glb",
+    "textures": "textures/<assetname>_<map>.png",
+    "animations": "animations/<character>/<anim_name>.glb"
+  },
+  "tags": ["interactable","collectible","npc","environment","ui"],
+  "collider_suffix": "_collider",
+  "lod_suffix_format": "_LOD{0}",
+  "recommended_texture_sizes": {
+    "character_face": 2048,
+    "character_body": 1024,
+    "large_environment": 2048,
+    "small_prop": 1024
+  }
+}
